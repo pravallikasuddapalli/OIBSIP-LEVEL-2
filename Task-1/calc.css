@@ -1,0 +1,90 @@
+/* Set the font family and background color for the calculator */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eee;
+}
+
+/* Style the calculator table */
+.box {
+  margin: 50px auto;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the calculator display */
+#answer {
+  font-size: 3em;
+  text-align: right;
+  padding: 10px;
+  height: 100px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Style the calculator buttons */
+td, th {
+  font-size: 2em;
+  padding: 10px;
+  width: 20%;
+  text-align: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+}
+
+th {
+  font-weight: normal;
+}
+
+/* Style the special buttons */
+td[colspan="2"], td[rowspan="2"] {
+  background-color: #aaa;
+  color: #fff;
+}
+
+td[colspan="2"]:hover, td[rowspan="2"]:hover {
+  background-color: #333;
+}
+
+/* Style the operator buttons */
+td:nth-child(4), td:nth-child(5), td:nth-child(6), td:last-child {
+  background-color: #aaa;
+  color: #fff;
+}
+
+td:nth-child(4):hover, td:nth-child(5):hover, td:nth-child(6):hover, td:last-child:hover {
+  background-color: #333;
+}
+
+/* Style the number buttons */
+th:hover {
+  background-color: #ccc;
+}
+
+/* Style the decimal point button */
+td:first-child:last-child:hover {
+  background-color: #ccc;
+}
+
+/* Style the parentheses and answer buttons */
+td:first-child, td:nth-child(2), td:nth-child(3) {
+  background-color: #ccc;
+  color: #fff;
+}
+
+td:first-child:hover, td:nth-child(2):hover, td:nth-child(3):hover {
+  background-color: #333;
+}
+
+/* Style the delete and clear buttons */
+td:nth-last-child(2), td:last-child {
+  background-color: #f00;
+  color: #fff;
+}
+
+td:nth-last-child(2):hover, td:last-child:hover {
+  background-color: #800;
+}
